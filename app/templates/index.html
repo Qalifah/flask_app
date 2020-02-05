@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block app_content %}
+    <h2>Hello, welcome to my site</h2>
+    <h2>Are you a registered user or is this your first time on the site?</h2>
+    <h2>Click <a href="{{ url_for('register') }}">Register</a> to become a member</h2>
+    <h2>Click <a href="{{ url_for('login') }}">Login</a> to proceed to your account</h2>
+{% endblock %}

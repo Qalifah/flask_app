@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <h2>Edit:</h2>
+    <textarea name='body' id='body' form='edit_form'>{{ post.body }}</textarea>
+    <form action='/edit_post/{{ post.id }}' id='edit_form' method='POST'>
+        <input type='submit' value='Save'>
+    </form>
+{% endblock %}
